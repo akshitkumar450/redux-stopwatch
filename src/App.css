@@ -1,0 +1,11 @@
+.currentTime{
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+.currentTime>h2{
+  font-size: 3rem;
+}
+.currentTime__container>span{
+  font-size: 2.5rem;
+}
