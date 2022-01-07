@@ -1,34 +1,34 @@
-export const start = () => {
+export const startTimer = () => {
   return {
     type: "START",
   };
 };
 
-export const pause = () => {
+export const pauseTimer = () => {
   return {
     type: "PAUSE",
   };
 };
 
-export const resume = () => {
+export const resumeTimer = () => {
   return {
     type: "RESUME",
   };
 };
 
-export const seconds = () => {
+export const secondsTimer = () => {
   return {
     type: "SECONDS",
   };
 };
 
-export const reset = () => {
+export const resetTimer = () => {
   return {
     type: "RESET",
   };
 };
 
-export const lap = () => {
+export const lapTimer = () => {
   return {
     type: "LAPS",
   };

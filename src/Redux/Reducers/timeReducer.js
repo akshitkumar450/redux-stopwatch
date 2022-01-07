@@ -3,7 +3,6 @@ const initialState = {
   start: false,
   laps: [],
   isClicked: false,
-  running: false,
 };
 
 const timeReducer = (state = initialState, action) => {
@@ -12,20 +11,17 @@ const timeReducer = (state = initialState, action) => {
       return {
         ...state,
         start: true,
-        running: true,
         isClicked: true,
       };
     case "PAUSE":
       return {
         ...state,
         start: false,
-        running: false,
       };
     case "RESUME":
       return {
         ...state,
         start: true,
-        running: true,
       };
     case "LAPS":
       return {

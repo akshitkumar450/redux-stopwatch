@@ -3,9 +3,41 @@
   display: grid;
   place-items: center;
 }
+button{
+  width: 80px;
+  height: 40px;
+  margin: 0 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 500px;
+}
 .currentTime>h2{
   font-size: 3rem;
 }
 .currentTime__container>span{
   font-size: 2.5rem;
+}
+.btns__container{
+  margin: 20px 0;
+}
+.pause-resume-btn,
+.laps__container{
+  display: flex;
+}
+.laps__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.laps{
+  display: flex;
+  align-items: center;
+}
+.laps>span{
+  font-size: 2rem;
+  margin: 10px;
+  display: inline-block;
 }
