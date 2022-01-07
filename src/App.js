@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import CurrentTime from "./components/CurrentTime";
+import StopWatch from "./components/StopWatch";
 
 function App() {
-  return <CurrentTime />;
+  return <StopWatch />;
 }
 
 export default App;

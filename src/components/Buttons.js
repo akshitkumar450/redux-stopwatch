@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Button } from "@material-ui/core";
 import {
   lapTimer,
   pauseTimer,
@@ -23,12 +24,29 @@ function Buttons() {
   return (
     <div className="btns__container">
       {!isClicked ? (
-        <button onClick={() => dispatch(startTimer())}>start</button>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => dispatch(startTimer())}>
+          start
+        </Button>
       ) : (
         <div className="pause-resume-btn">
-          <button onClick={handleTimer}>{start ? "pause" : "resume"}</button>
-          <button onClick={() => dispatch(lapTimer())}>laps</button>
-          <button onClick={() => dispatch(resetTimer())}>reset</button>
+          <Button variant="contained" color="primary" onClick={handleTimer}>
+            {start ? "pause" : "resume"}
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => dispatch(lapTimer())}>
+            laps
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => dispatch(resetTimer())}>
+            reset
+          </Button>
         </div>
       )}
     </div>

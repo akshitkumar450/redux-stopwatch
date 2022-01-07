@@ -5,7 +5,7 @@ import Buttons from "./Buttons";
 import FormatTimer from "./FormatTimer";
 import Laps from "./Laps";
 
-const CurrentTime = () => {
+const StopWatch = () => {
   const timer = useSelector((state) => state.time.timer);
   const start = useSelector((state) => state.time.start);
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ const CurrentTime = () => {
   }, [dispatch, start]);
 
   return (
-    <div className="currentTime">
+    <div className="stopwatch__container">
       <h2>STOPWATCH</h2>
       <FormatTimer timer={timer} />
       <Buttons />
@@ -35,4 +35,4 @@ const CurrentTime = () => {
   );
 };
 
-export default CurrentTime;
+export default StopWatch;
